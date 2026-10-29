@@ -1,0 +1,23 @@
+{
+  "name": "student-academic-engagement-monitoring",
+  "version": "1.0.0",
+  "description": "Student Academic Engagement Monitoring and Parent Communication System (MERN Stack)",
+  "scripts": {
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "test": "npm test --prefix server",
+    "seed": "npm run seed --prefix server",
+    "build": "npm run build --prefix client",
+    "start": "npm run start --prefix server"
+  },
+  "keywords": [
+    "mern",
+    "education",
+    "academic-monitoring",
+    "parent-communication",
+    "student-risk-detection"
+  ],
+  "author": "",
+  "license": "MIT"
+}

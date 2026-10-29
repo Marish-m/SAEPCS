@@ -1,0 +1,47 @@
+{
+  "name": "student-academic-monitoring-server",
+  "version": "1.0.0",
+  "description": "Backend API for Student Academic Engagement Monitoring and Parent Communication System",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed": "node src/utils/seedData.js",
+    "test": "node test-auth-and-models.js && node test-attendance-and-marks.js && node test-assignments-and-leaves.js && node test-academic-risk-engine.js && node test-parent-communication.js && node test-reports-and-analytics.js && node test-http-api.js && node test-student-faculty-departments.js",
+    "test:models": "node test-auth-and-models.js",
+    "test:modules": "node test-attendance-and-marks.js",
+    "test:assignments": "node test-assignments-and-leaves.js",
+    "test:risk": "node test-academic-risk-engine.js",
+    "test:notifications": "node test-parent-communication.js",
+    "test:accessibility": "node test-parent-accessibility-sandboxed.js",
+    "test:direct-parent": "node test-direct-parent-communication.js",
+    "test:reports": "node test-reports-and-analytics.js",
+    "test:api": "node test-http-api.js"
+  },
+  "keywords": [
+    "mern",
+    "academic-monitoring",
+    "education",
+    "parent-communication"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "express-rate-limit": "^8.7.1",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb-memory-server": "^11.3.0",
+    "mongoose": "^8.24.5",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
